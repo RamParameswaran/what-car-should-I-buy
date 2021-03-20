@@ -47,7 +47,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "yarn clean-code"
+            "pre-commit": "yarn clean-code && yarn test -- --watchAll=false"
         }
     },
     "browserslist": {
