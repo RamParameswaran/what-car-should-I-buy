@@ -30,7 +30,7 @@ jobs:
         
     - name: Unit Tests
       run: |
-        CI='' yarn test
+        CI='' yarn test -- --watchAll=false
         
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
