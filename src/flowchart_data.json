@@ -1,0 +1,15 @@
+{
+  "name": "home",
+  "route": "/",
+  "children": [
+    {
+      "name": "one",
+      "route": "one",
+      "children": [
+        { "name": "a", "route": "a", "children": [] },
+        { "name": "b", "route": "b", "children": [] }
+      ]
+    },
+    { "name": "two", "route": "two", "children": [] }
+  ]
+}

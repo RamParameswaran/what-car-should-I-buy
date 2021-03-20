@@ -1,19 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from "react";
 
-function App() {
-	return (
-		<Router>
-			<Switch>
-				<Route exact path="/">
-					Home
-				</Route>
-				<Route exact path="/about">
-					About
-				</Route>
-			</Switch>
-		</Router>
-	);
-}
+import flowchart_data from "flowchart_data.json";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import RouteNode from "components/RouteNode";
+
+const App: React.FunctionComponent = () => {
+    return (
+        <Router>
+            <RouteNode flowchart_data={flowchart_data} />
+        </Router>
+    );
+};
 
 export default App;
